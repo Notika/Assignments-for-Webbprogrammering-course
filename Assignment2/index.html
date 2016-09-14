@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Min filmsamling</title>
+  <script src="js/jquery-2.2.0.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <form name="myForm" id="valform" action="#" method="POST">
+
+
+      <header>
+        <h1> Min filmsamling </h1>
+      </header>
+      <div id="mainblock">
+        <hr>
+
+        
+        <nav>
+
+          <h3>Lägg till en film</h3>
+          <p>Titelt:</p>
+          <p><input id=formFilmTitle type=text class="required"></p>
+
+          <p>Betyg:</p>
+          <p><select id="formFilmRank">
+            <option value="0">Valj betyg här...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select></p>
+
+          <p><input type="button" id="btnSubmit" Value=" Spara film "></p>
+          <hr>
+          <h3>Sortera filmer</h3>
+          <p><input type="button" id="btnHighest" class = "btn" Value=" Högst Betyg"></p>
+          <p><input type="button" id="btnLowest" class = "btn" Value=" Lägst Betyg "></p>
+
+        </nav>
+
+
+        <div class="floating-box">
+          <div class="filmer">
+            <h2>Filmer</h2>
+
+            <div>
+              <ul>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </form>
+  </div>
+</body>
+
+</html>
